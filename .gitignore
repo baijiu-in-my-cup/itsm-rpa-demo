@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 运行期产物 (含本地状态/日志/截图, 不入库)
+rpa-data/itsm.db
+rpa-data/storage-state*.json
+rpa-data/screenshots/
+rpa-data/log-info/
+rpa-data/log-error/
+mock_itsm/submitted.jsonl
+
+# 打包产物
+build/
+dist/
+*.spec
+
+# IDE
+.idea/
+.vscode/

@@ -1,0 +1,47 @@
+{
+  "task_desc": "故障报修轮询派单",
+  "task_type": 2,
+  "end_time": "23:59",
+  "submit_person": [
+    {
+      "name": "赵磊",
+      "department": ["技术支持中心", "一线值班组"],
+      "role": 2,
+      "sign": 0
+    },
+    {
+      "name": "孙悦",
+      "department": ["技术支持中心", "一线值班组"],
+      "role": 2,
+      "sign": 0
+    },
+    {
+      "name": "周涛",
+      "department": ["技术支持中心", "一线值班组"],
+      "role": 2,
+      "sign": 0
+    },
+    {
+      "name": "吴敏",
+      "department": ["技术支持中心", "一线值班组"],
+      "role": 2,
+      "sign": 0
+    }
+  ],
+  "submit_reply": "故障报修工单,一线值班组按轮询顺序接单处理。",
+  "condition": {
+    "filter_type": "and",
+    "filter_content": [
+      {
+        "filter_desc": "工单信息",
+        "需求描述": "故障",
+        "is_or_not": true
+      },
+      {
+        "filter_desc": "处理跟踪",
+        "环节名称": "待分派",
+        "is_or_not": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "task_desc": "密码重置",
+  "task_type": 1,
+  "submit_person": [
+    {
+      "name": "李娜",
+      "department": ["技术支持中心", "账号权限组"],
+      "role": 1,
+      "sign": 0
+    }
+  ],
+  "submit_reply": "密码重置工单,请账号权限组按流程协助重置。",
+  "condition": {
+    "filter_type": "and",
+    "filter_content": [
+      {
+        "filter_desc": "工单信息",
+        "需求标题": "密码重置",
+        "is_or_not": true
+      },
+      {
+        "filter_desc": "处理跟踪",
+        "环节名称": "一线受理",
+        "is_or_not": true
+      }
+    ]
+  }
+}

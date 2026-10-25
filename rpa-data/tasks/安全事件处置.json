@@ -1,0 +1,28 @@
+{
+  "task_desc": "安全事件处置",
+  "task_type": 1,
+  "submit_person": [
+    {
+      "name": "陈静",
+      "department": ["信息安全中心", "安全运营组"],
+      "role": 1,
+      "sign": 0
+    }
+  ],
+  "submit_reply": "命中安全事件规则,转安全运营组按应急预案处置。",
+  "condition": {
+    "filter_type": "and",
+    "filter_content": [
+      {
+        "filter_desc": "工单信息",
+        "需求描述": "安全事件",
+        "is_or_not": true
+      },
+      {
+        "filter_desc": "反馈信息",
+        "反馈内容": ["可疑", "告警"],
+        "is_or_not": true
+      }
+    ]
+  }
+}

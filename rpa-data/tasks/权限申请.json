@@ -1,0 +1,39 @@
+{
+  "task_desc": "权限申请",
+  "task_type": 1,
+  "submit_person": [
+    {
+      "name": "张伟",
+      "department": ["技术支持中心", "账号权限组"],
+      "role": 1,
+      "sign": 0
+    }
+  ],
+  "submit_reply": "已核验权限申请要素,请账号权限组开通相应权限。",
+  "condition": {
+    "filter_type": "and",
+    "filter_content": [
+      {
+        "filter_desc": "工单信息",
+        "需求描述": "权限",
+        "is_or_not": true
+      },
+      {
+        "filter_type": "or",
+        "filter_content": [
+          {
+            "filter_desc": "文件",
+            "文件类型": ["xlsx", "pdf"],
+            "文件关键字": ["权限申请", "授权表"],
+            "is_or_not": true
+          },
+          {
+            "filter_desc": "处理跟踪",
+            "环节名称": "提交申请",
+            "is_or_not": true
+          }
+        ]
+      }
+    ]
+  }
+}

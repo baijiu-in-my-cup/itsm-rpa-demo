@@ -1,0 +1,15 @@
+# itsm-rpa-demo 运行依赖 (与桌面端 & Mock 服务共用同一环境)
+flet==0.25.2
+playwright==1.48.0
+ddddocr==1.5.6
+pillow==10.4.0
+sqlalchemy==2.0.37
+aiosqlite==0.20.0
+loguru==0.7.3
+pydantic==2.10.5
+requests==2.32.3
+
+# Mock ITSM 服务
+fastapi==0.115.6
+uvicorn==0.33.0
+python-multipart==0.0.32
